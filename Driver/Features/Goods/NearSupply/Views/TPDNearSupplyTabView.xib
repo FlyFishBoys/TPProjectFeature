@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TPDNearSupplyTabView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bC-VT-TWD">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDestinationBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="UHP-AW-Dvf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXL-zG-pGv">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickcarModelBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Yfk-aa-u2k"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dA-Jv-RdQ">
+                    <rect key="frame" x="187.5" y="10" width="0.5" height="20"/>
+                    <color key="backgroundColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="Gwb-ZY-hQE"/>
+                        <constraint firstAttribute="height" constant="20" id="udy-Eu-ani"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Fj-1E-NDQ">
+                    <rect key="frame" x="0.0" y="39.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="S9H-Ka-JCU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MXL-zG-pGv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0GN-8h-HEM"/>
+                <constraint firstAttribute="trailing" secondItem="1Fj-1E-NDQ" secondAttribute="trailing" id="3IM-fA-1Fb"/>
+                <constraint firstItem="MXL-zG-pGv" firstAttribute="width" secondItem="4bC-VT-TWD" secondAttribute="width" id="4L9-h0-a8a"/>
+                <constraint firstItem="5dA-Jv-RdQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9BM-h3-dNY"/>
+                <constraint firstItem="5dA-Jv-RdQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DtS-xA-EPA"/>
+                <constraint firstAttribute="bottom" secondItem="4bC-VT-TWD" secondAttribute="bottom" id="F9H-iw-kWu"/>
+                <constraint firstItem="4bC-VT-TWD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GXq-jb-erF"/>
+                <constraint firstAttribute="bottom" secondItem="MXL-zG-pGv" secondAttribute="bottom" id="IsP-9Z-Dzc"/>
+                <constraint firstItem="MXL-zG-pGv" firstAttribute="leading" secondItem="4bC-VT-TWD" secondAttribute="trailing" id="J27-Dd-Cqv"/>
+                <constraint firstItem="4bC-VT-TWD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LPq-fR-PSl"/>
+                <constraint firstAttribute="bottom" secondItem="5dA-Jv-RdQ" secondAttribute="bottom" constant="10" id="Q3Q-f8-pn5"/>
+                <constraint firstAttribute="trailing" secondItem="MXL-zG-pGv" secondAttribute="trailing" id="WIt-v6-kXS"/>
+                <constraint firstItem="5dA-Jv-RdQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Wa9-Jl-kIy"/>
+                <constraint firstItem="MXL-zG-pGv" firstAttribute="height" secondItem="4bC-VT-TWD" secondAttribute="height" id="eJb-ZV-cES"/>
+                <constraint firstAttribute="bottom" secondItem="1Fj-1E-NDQ" secondAttribute="bottom" id="n2z-wV-Ccq"/>
+                <constraint firstItem="1Fj-1E-NDQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="p5L-EE-eAb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carModelBtn" destination="MXL-zG-pGv" id="9dM-bs-IRB"/>
+                <outlet property="destinationBtn" destination="4bC-VT-TWD" id="8Bu-lb-8bJ"/>
+            </connections>
+            <point key="canvasLocation" x="6" y="-178"/>
+        </view>
+    </objects>
+</document>
