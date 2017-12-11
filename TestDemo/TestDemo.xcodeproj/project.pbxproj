@@ -47,8 +47,6 @@
 		FF9B49D91FDA5D65006F43DB /* TXLimitedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B49D41FDA5D64006F43DB /* TXLimitedTextField.m */; };
 		FF9B49DA1FDA5D65006F43DB /* TXLimitedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B49D51FDA5D64006F43DB /* TXLimitedTextView.m */; };
 		FFA0293E1FC554AE00F3B71D /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA0293D1FC554AE00F3B71D /* SwitchViewController.m */; };
-		FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029411FC55F3A00F3B71D /* KeychainUUID.m */; };
 		FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029481FC5601D00F3B71D /* PageControllerCenter.m */; };
 		FFE82A091FD7D9A7007417C9 /* BusinessConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE82A071FD7D9A6007417C9 /* BusinessConstants.m */; };
 		FFE82A0F1FD7DA03007417C9 /* UITableView+UpdateFont.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE82A0D1FD7DA03007417C9 /* UITableView+UpdateFont.m */; };
@@ -143,10 +141,6 @@
 		FF9B49D51FDA5D64006F43DB /* TXLimitedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLimitedTextView.m; sourceTree = "<group>"; };
 		FFA0293C1FC554AE00F3B71D /* SwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
 		FFA0293D1FC554AE00F3B71D /* SwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
-		FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
-		FFA029411FC55F3A00F3B71D /* KeychainUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainUUID.m; sourceTree = "<group>"; };
-		FFA029421FC55F3A00F3B71D /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
-		FFA029431FC55F3A00F3B71D /* KeychainUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainUUID.h; sourceTree = "<group>"; };
 		FFA029471FC5601D00F3B71D /* PageControllerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenter.h; sourceTree = "<group>"; };
 		FFA029481FC5601D00F3B71D /* PageControllerCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageControllerCenter.m; sourceTree = "<group>"; };
 		FFA0294A1FC5707E00F3B71D /* PageControllerCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenterProtocol.h; sourceTree = "<group>"; };
@@ -492,7 +486,6 @@
 		FF799E3B1FC2D89F00C86E40 /* BaseNetWork */ = {
 			isa = PBXGroup;
 			children = (
-				FFA0293F1FC55F3A00F3B71D /* TJKeyChain */,
 				FF799E491FC2D98800C86E40 /* Base64 */,
 				FF799E3C1FC2D89F00C86E40 /* Security */,
 				FF799E531FC2DEF500C86E40 /* BaseNetWorkManager.h */,
@@ -549,18 +542,6 @@
 			);
 			path = SwitchViewController;
 			sourceTree = "<group>";
-		};
-		FFA0293F1FC55F3A00F3B71D /* TJKeyChain */ = {
-			isa = PBXGroup;
-			children = (
-				FFA029421FC55F3A00F3B71D /* KeychainItemWrapper.h */,
-				FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */,
-				FFA029431FC55F3A00F3B71D /* KeychainUUID.h */,
-				FFA029411FC55F3A00F3B71D /* KeychainUUID.m */,
-			);
-			name = TJKeyChain;
-			path = TestDemo/Core/TJKeyChain;
-			sourceTree = SOURCE_ROOT;
 		};
 		FFA029461FC55FD300F3B71D /* PageControllerCenter */ = {
 			isa = PBXGroup;
@@ -794,7 +775,6 @@
 				FF9B49D91FDA5D65006F43DB /* TXLimitedTextField.m in Sources */,
 				FFEE48A61FD5376300C75354 /* CommonUnitCenter+MyTool.m in Sources */,
 				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
-				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
 				FFEE48B41FD53DF100C75354 /* CityModel.m in Sources */,
@@ -822,7 +802,6 @@
 				FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */,
 				FFE82A091FD7D9A7007417C9 /* BusinessConstants.m in Sources */,
 				FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */,
-				FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */,
 				FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

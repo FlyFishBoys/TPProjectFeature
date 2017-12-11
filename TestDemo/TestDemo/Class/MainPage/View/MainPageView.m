@@ -25,8 +25,8 @@
         make.width.equalTo(@200);
         make.height.equalTo(@20);
     }];
-    
-    
+
+
     MAMapView * mapView = [MAMapView new];
     [self addSubview:mapView];
     

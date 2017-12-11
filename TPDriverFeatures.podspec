@@ -13,13 +13,13 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "FlyFishBoys" => "2517185883@qq.com" }
   
-  s.platform     = :ios
+  s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/FlyFishBoys/TPProjectFeature.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  =  "TestDemo/TestDemo/Class/MainPage/View/*.{h,m}"
+  s.source_files  =  "TestDemo/TestDemo/**/*.{h,m}"
 
  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
  #s.exclude_files = "Classes/Exclude"
@@ -47,7 +47,9 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    s.dependency 'AFNetworking'
    s.dependency 'Masonry'      
-   s.dependency 'AMap2DMap'
+   s.dependency 'AMap2DMap' , '~> 4.6.0'
+   s.dependency 'MBProgressHUD' 
+   s.dependency 'ProgressHUD' 
   #s.dependency 'AMap2DMap-NO-IDFA'
   #s.dependency 'AMapSearch-NO-IDFA'
   #s.dependency 'AMapLocation-NO-IDFA'
