@@ -1,0 +1,14 @@
+platform :ios,’8.0’
+use_frameworks!
+
+target ‘TestDemo’ do
+
+pod 'Masonry'
+pod 'IQKeyboardManager'
+pod 'AFNetworking'
+pod 'MBProgressHUD'
+pod 'ProgressHUD'
+pod 'AMap2DMap', '~> 4.6.0'
+pod 'ReactiveCocoa' , '2.0'
+
+end
