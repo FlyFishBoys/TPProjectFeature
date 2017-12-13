@@ -7,8 +7,8 @@
 //
 
 #import "NetWorkManagerCenter.h"
-#import "BusinessConstants.h"
-#import "LoginDataRequest.h"
+//#import "BusinessConstants.h"
+//#import "LoginDataRequest.h"
 
 @implementation NetWorkManagerCenter
 
@@ -25,14 +25,16 @@
 
 -(void)requestWithDestination:(NSString*)destination forViewModel:(id)viewModel  completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler
 {
-    //登录
-    if ([destination isEqualToString:Business_Login]) {
-        
-        [[[LoginDataRequest alloc]init]requestForViewModel:viewModel completionHandler:completionHandler];
-
-    }
+//    //登录
+//    if ([destination isEqualToString:Business_Login]) {
+//
+//        [[[LoginDataRequest alloc]init]requestForViewModel:viewModel completionHandler:completionHandler];
+//
+//    }
+//
     
     
+    NSLog(@"%@",kBASE_URL);
     
 }
 

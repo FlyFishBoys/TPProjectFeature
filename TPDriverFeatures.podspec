@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TPDriverFeatures"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "TPProject 的功能模块库"
 
   s.description  = <<-DESC
@@ -19,7 +19,11 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  =  "TestDemo/TestDemo/**/*.{h,m}"
+  #s.source_files  =  "TestDemo/TestDemo/Class/BaseViewController/BaseModel/**/*.{h,m}"
+    s.subspec 'DM' do |ss| #需要group的时候这样搞，比如工程里有个DM文件夹  
+    ss.source_files =  'TestDemo/TestDemo/Class/BaseViewController/BaseModel/**/*.{h,m}'  
+    end  
+
 
  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
  #s.exclude_files = "Classes/Exclude"
@@ -47,7 +51,7 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    s.dependency 'AFNetworking'
    s.dependency 'Masonry'      
-   s.dependency 'AMap2DMap' , '~> 4.6.0'
+   #s.dependency 'AMap2DMap' , '~> 4.6.0'
    s.dependency 'MBProgressHUD' 
    s.dependency 'ProgressHUD' 
   #s.dependency 'AMap2DMap-NO-IDFA'

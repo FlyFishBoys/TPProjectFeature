@@ -7,6 +7,8 @@
 //
 
 #import "MainPageViewModel.h"
+#import "MainPageView.h"
+#import "BaseViewModel.h"
 
 @implementation MainPageViewModel
 
@@ -15,7 +17,7 @@
 {
     if (!_mainPageView) {
         _mainPageView = [[MainPageView alloc]init];
-        self.currentView = _mainPageView;
+//        self.currentView = _mainPageView;
     }
 }
 

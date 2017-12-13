@@ -12,10 +12,10 @@
 		FF2605F31FD8DEAA00FF3E17 /* SwitchPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605F21FD8DEAA00FF3E17 /* SwitchPageTurn.m */; };
 		FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */; };
 		FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */; };
-		FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */; };
 		FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2606021FD90AC100FF3E17 /* BaseRequestData.m */; };
 		FF26060B1FD935FC00FF3E17 /* DPNormalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26060A1FD935FC00FF3E17 /* DPNormalObject.m */; };
 		FF26060E1FD9369C00FF3E17 /* DPDynamicProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26060D1FD9369C00FF3E17 /* DPDynamicProxy.m */; };
+		FF291D111FE0F545004056B4 /* CustomNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF291D0F1FE0F545004056B4 /* CustomNavgationBar.m */; };
 		FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6DF1FBC224300552A38 /* AppDelegate.m */; };
 		FF33C6E31FBC224300552A38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6E21FBC224300552A38 /* ViewController.m */; };
 		FF33C6E61FBC224300552A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6E41FBC224300552A38 /* Main.storyboard */; };
@@ -69,8 +69,6 @@
 		FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageTurn.m; sourceTree = "<group>"; };
 		FF2605F91FD8F7F600FF3E17 /* LoginDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDataRequest.h; sourceTree = "<group>"; };
 		FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDataRequest.m; sourceTree = "<group>"; };
-		FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavgationBar.m; sourceTree = "<group>"; };
-		FF2605FF1FD90A7D00FF3E17 /* CustomNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavgationBar.h; sourceTree = "<group>"; };
 		FF2606011FD90AC100FF3E17 /* BaseRequestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequestData.h; sourceTree = "<group>"; };
 		FF2606021FD90AC100FF3E17 /* BaseRequestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequestData.m; sourceTree = "<group>"; };
 		FF2606081FD935C000FF3E17 /* DPDynamicProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDynamicProtocol.h; sourceTree = "<group>"; };
@@ -78,6 +76,8 @@
 		FF26060A1FD935FC00FF3E17 /* DPNormalObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPNormalObject.m; sourceTree = "<group>"; };
 		FF26060C1FD9369C00FF3E17 /* DPDynamicProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDynamicProxy.h; sourceTree = "<group>"; };
 		FF26060D1FD9369C00FF3E17 /* DPDynamicProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPDynamicProxy.m; sourceTree = "<group>"; };
+		FF291D0F1FE0F545004056B4 /* CustomNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavgationBar.m; sourceTree = "<group>"; };
+		FF291D101FE0F545004056B4 /* CustomNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavgationBar.h; sourceTree = "<group>"; };
 		FF33C6DB1FBC224300552A38 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF33C6DE1FBC224300552A38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF33C6DF1FBC224300552A38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -238,15 +238,6 @@
 			path = BaseRequestData;
 			sourceTree = "<group>";
 		};
-		FF2605FD1FD90A7D00FF3E17 /* UINavgationBar+Custom */ = {
-			isa = PBXGroup;
-			children = (
-				FF2605FF1FD90A7D00FF3E17 /* CustomNavgationBar.h */,
-				FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */,
-			);
-			path = "UINavgationBar+Custom";
-			sourceTree = "<group>";
-		};
 		FF2606041FD9353300FF3E17 /* DPDynamicProtocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +248,15 @@
 				FF26060D1FD9369C00FF3E17 /* DPDynamicProxy.m */,
 			);
 			path = DPDynamicProtocol;
+			sourceTree = "<group>";
+		};
+		FF291D0E1FE0F545004056B4 /* UINavgationBar+Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FF291D0F1FE0F545004056B4 /* CustomNavgationBar.m */,
+				FF291D101FE0F545004056B4 /* CustomNavgationBar.h */,
+			);
+			path = "UINavgationBar+Custom";
 			sourceTree = "<group>";
 		};
 		FF33C6D21FBC224300552A38 = {
@@ -419,6 +419,7 @@
 		FF5A6B491FBED43200D29C01 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FF291D0E1FE0F545004056B4 /* UINavgationBar+Custom */,
 				FF2605FC1FD90A2A00FF3E17 /* BaseRequestData */,
 				FF5A6B521FBED5F200D29C01 /* BaseModel */,
 				FF5A6B501FBED5F200D29C01 /* BaseView */,
@@ -587,7 +588,6 @@
 			children = (
 				FF9B49CA1FDA5D64006F43DB /* InputKit */,
 				FF2606041FD9353300FF3E17 /* DPDynamicProtocol */,
-				FF2605FD1FD90A7D00FF3E17 /* UINavgationBar+Custom */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -784,6 +784,7 @@
 				FF9B49D71FDA5D65006F43DB /* TXDynamicDelegate.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
 				FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */,
+				FF291D111FE0F545004056B4 /* CustomNavgationBar.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
 				FF26060E1FD9369C00FF3E17 /* DPDynamicProxy.m in Sources */,
 				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
@@ -802,7 +803,6 @@
 				FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */,
 				FFE82A091FD7D9A7007417C9 /* BusinessConstants.m in Sources */,
 				FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */,
-				FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

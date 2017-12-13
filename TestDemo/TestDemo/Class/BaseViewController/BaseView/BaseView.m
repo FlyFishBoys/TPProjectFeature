@@ -7,6 +7,7 @@
 //
 
 #import "BaseView.h"
+#import "Masonry.h"
 
 @implementation BaseView
 
@@ -22,6 +23,8 @@
 
 -(void)addSubViews
 {
-    
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
 }
 @end

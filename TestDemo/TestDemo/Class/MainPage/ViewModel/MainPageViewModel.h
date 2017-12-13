@@ -6,11 +6,15 @@
 //  Copyright © 2017年 sunwf. All rights reserved.
 //
 
-#import "BaseViewModel.h"
-#import "MainPageView.h"
+#import <UIKit/UIKit.h>
 
-@interface MainPageViewModel : BaseViewModel
+@class MainPageView;
+@class BaseViewModel;
+
+@interface MainPageViewModel  : NSObject
 
 @property (nonatomic,strong) MainPageView * mainPageView;
+@property (nonatomic,strong) BaseViewModel * mainPageViewModel;
+
 
 @end

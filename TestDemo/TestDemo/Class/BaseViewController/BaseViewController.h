@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PageControllerCenterProtocol.h"
 #import "CustomNavgationBar.h"
+
+@protocol PageControllerCenterProtocol;
 
 /* 导航条样式 分两种，解决不同界面的导航条设置后互相影响 */
 typedef NS_ENUM(NSInteger,UIBaseViewControllerNavgationBarStyle) {

@@ -8,6 +8,9 @@
 
 #import "BaseViewController.h"
 
+@class MainPageViewModel;
+@class MainPageView;
+
 @interface MainPageViewController : BaseViewController
 
 @end

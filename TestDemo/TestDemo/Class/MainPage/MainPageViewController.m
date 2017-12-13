@@ -8,6 +8,7 @@
 
 #import "MainPageViewController.h"
 #import "MainPageViewModel.h"
+#import "MainPageView.h"
 
 @interface MainPageViewController ()
 
